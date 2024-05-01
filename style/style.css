@@ -35,10 +35,11 @@ footer h3 {
 
 ul, ol {
     margin-bottom: 15px;
+    padding-left: 20px;
 }
 
 ul li, ol li {
-    list-style: none;
+    list-style: auto;
     margin-bottom: 5px;
 }
 
@@ -46,4 +47,8 @@ img {
     display: inline-block;
     margin-right: 20px;
     vertical-align: middle;
+}
+
+a {
+    color: red;
 }
