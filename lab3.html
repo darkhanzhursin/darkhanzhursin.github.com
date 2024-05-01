@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="./style/lab3.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./resources/logo.jpeg" alt="Logo" height="50">
+        </div>
+        <span>Welcome, Tina!</span>
+        <button>Logout</button>
+    </header>
+    <main>
+        <table id="product-list">
+            <caption style="text-align: left;">Product List</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node.js</td>
+                    <td>$9.99</td>
+                    <td>8</td>
+                    <td class="quantity">
+                        <button>-</button>
+                        <input type="text" value="2">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>$19.99</td>
+                    <td>5</td>
+                    <td class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>$29.99</td>
+                    <td>13</td>
+                    <td class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="shopping-cart">
+            <caption style="text-align: left;">Your Shopping Cart</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node.js</td>
+                    <td>$9.99</td>
+                    <td>$9.99</td>
+                    <td class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>$29.99</td>
+                    <td>$290.99</td>
+                    <td class="quantity">
+                        <button>-</button>
+                        <input type="text" value="10">
+                        <button>+</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total:</td>
+                    <td>$300.98</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button class="place-order-btn">Place Order</button>
+    </main>
+</body>
+</html>
