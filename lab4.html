@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="./style/lab4.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Workshop Registration</h1>
+        <p>More Actions:</p>
+        <select name="action" id="action" name="choose">
+            <option></option>
+            <option>action1</option>
+            <option>action2</option>
+            <option>action3</option>
+            <option>action4</option>
+        </select>
+    </header>
+    
+    <p><u>Register now while seats are available!</u></p>
+
+    <main>
+        <form action="#" method="post">
+            <div class="form-container">
+                <div>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" required />
+                </div>
+                <div>
+                   <label for="lname">Last Name: </label>
+                   <input type="text" id="lname" name="lname" required /> 
+                </div>
+                <div>
+                    <label for="company">Company/Institution: </label>
+                    <input type="text" id="company" name="company" required /> 
+                 </div>
+                 <div>
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city"/> 
+                </div>
+                <div>
+                    <label for="state">State / Province / Region:</label>
+                    <select id="state" name="state">
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="mia">Miami</option>
+                        <option value="ca">California</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="mia">Kazakhstan</option>
+                        <option value="ca">USA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <p><u>Lunch</u></p>
+                <div>
+                    <label for="meal">Meal Preference</label>
+                    <select id="meal" name="meal">
+                        <option value="vegan">-Vegetarian-</option>
+                        <option value="local">Local</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+
+                <p><u>Payment Details</u></p>
+                <div>
+                    <label for="payment">Payment Mode</label>   
+                        <input type="checkbox" name="cash" /> Cash
+                        <br>
+                        <input type="checkbox" name="cheque" /> Cheque
+                        <br>
+                        <input type="checkbox" name="demand" /> Demand Draft 
+                        <br>        
+                </div>
+
+                <div>
+                    <label for="cheque">DD/Cheque No.</label>
+                    <input type="text" id="cheque" name="cheq"/> 
+                </div>
+                <div>
+                    <label for="drawn">Drawn On (Bank Name)</label>
+                    <input type="text" id="drawn" name="drawn"/> 
+                </div>
+                <div>
+                    <label for="payable">Payable at</label>
+                    <input type="text" id="payable" name="payable"/> 
+                </div>
+            </div>
+            
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</body>
+</html>

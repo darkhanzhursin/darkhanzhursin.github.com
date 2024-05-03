@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aquamarine;
+}
+header h1 {
+    margin: 20;
+}
+
+header > p{
+    margin-left: 2%;
+}
+
+/* Style for form container */
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* Style for form labels */
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for form inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="checkbox"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Style for dividing the form into two parts */
+.form-container > div:nth-child(odd) {
+    grid-column: 1;
+}
+
+.form-container > div:nth-child(even) {
+    grid-column: 2;
+}
+
+/* Style for section headings */
+.form-container p {
+    font-weight: bold;
+    margin-top: 20px;
+}
