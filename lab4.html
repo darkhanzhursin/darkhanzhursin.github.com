@@ -62,11 +62,11 @@
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                 </div>
                 <div>
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
 
                 <p><u>Lunch</u></p>
@@ -109,5 +109,18 @@
             <input type="reset" value="Reset">
         </form>
     </main>
+
+    <footer>
+        <p>
+            <a href="https://validator.w3.org/nu/?doc=https://darkhanzhursin.github.io/">
+                <img src="./resources/htmlchecker.png" alt="html validator" width="200" height="100"/>
+            </a>
+        
+    
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://darkhanzhursin.github.io/aboutme.html">
+                <img src="./resources/css_checker.png" alt="Valid CSS!" width="200" height="100"/>
+            </a>
+        </p> 
+    </footer>
 </body>
 </html>
