@@ -2,14 +2,17 @@
 // returned result is the sum of all elements which are greater than 20.
 
 function sum(arr) {
-  let total = 0;
-  for (let i; i < arr.length; i++) {
-    if (arr[i] > 20) {
-      total += arr[i];
-    }
-  }
-  return total;
+  // let total = 0;
+  // for (let i; i < arr.length; i++) {
+  //   if (arr[i] > 20) {
+  //     total += arr[i];
+  //   }
+  // }
+  // return total;
+  return arr.filter((n) => n > 20).reduce((acc, curr) => acc + curr);
 }
+let nums = [21, 12, 21];
+console.log(sum(nums));
 
 // 2. Create a function using function expression named getNewArray with one parameter of String
 // Array, return a new array which contains all string, length is greater than and equal to 5, and
@@ -29,8 +32,10 @@ const concat = (str, ...arrays) => {
       result = [...result, ...arr];
     }
   });
-  return result;
+  console.log(result);
 };
+
+concat("hi", [1, 2, 3], ["Hello", "world"]);
 
 const students = [
   { name: "Quincy", grades: [99, 88], courses: ["cs301", "cs303"] },
