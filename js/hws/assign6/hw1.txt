@@ -1,0 +1,12 @@
+How many callbacks queues in Node.js and what are they? 
+Give examples to explain how different callbacks are enqueued in different queues.
+
+1. process.nextTick
+2. Promise
+these 2 Microtask queues are implemented in Node.
+3. timers
+4. i/o events
+5. idle, prepare
+6. poll
+7. immediates or checks
+8. close
