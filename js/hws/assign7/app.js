@@ -31,6 +31,6 @@ app.all("*", (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(3000, () => {
-  console.log("Server is running on 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
 });

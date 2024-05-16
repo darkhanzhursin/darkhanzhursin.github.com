@@ -1,0 +1,27 @@
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/5
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "title": "ASD",
+    "price": 3000,
+    "description": "Good course!"
+}
+
+###
+DELETE http://localhost:3000/products/2
+
+###
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "title": "CS472",
+    "price": 1200,
+    "description": "Very expensive..."
+}
